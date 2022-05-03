@@ -1,0 +1,137 @@
+:root{
+    --black:#000000;
+    --darkteal:#132c2c;
+    --whiteish:#dcdcdc;
+    --superwhite: #f8f8ff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--black);
+    font-family:'Courier New', Courier, monospace;
+    color: var(--superwhite);
+}
+
+
+
+header{
+    background-color: var(--darkteal);
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+header .navbaricon{
+    max-height: 128px;
+    max-width: 128px;
+    margin: 14px;
+    border-radius: 50%;
+    border: 2px solid var(--whiteish);
+    cursor: pointer;
+}
+header .navbarheader{
+    color: var(--whiteish);
+    font-size: 60px;
+    font-weight: bold;
+    margin: 10px 20px;
+}
+header .navbarheader:hover{
+    color:aquamarine;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+header nav a{
+    margin: 26px;
+    padding: 0px 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--superwhite);
+}
+header nav a:hover{
+    text-decoration: none;
+    color:aquamarine;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+
+
+.showcase{
+    margin: auto;
+    height: 600px;
+    background: linear-gradient(to left,rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(../img/cogmindheader2.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: justify;
+}
+main div .container{
+    padding: 300px 40px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.showcasetitle{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.showcasedescription{
+    max-width: 400px;
+}
+
+.button i{
+    margin-right: 8px;
+    font-size: 18px;
+}
+.button{
+    padding: 8px 16px;
+    margin: auto 4px;
+    border: solid 1px aquamarine;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #7fffd4;
+    color: var(--black);
+    
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+.button:hover{
+    background-color: var(--black);
+    color: aquamarine;
+}
+
+
+
+.owl-carousel{
+    background-color: var(--darkteal);
+}
+.item{
+    border: solid rgb(127, 255, 212, 0.3);
+    border-width: 1px;
+}
+.item:hover{
+    transition: 0.2s ease all;
+    border: solid rgb(127, 255, 212, 1);
+    border-width: 1px;
+}
+.item p{
+    margin: 0;
+    text-align: center;
+    background-color: #7fffd4;
+    color: var(--black);
+}
